@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PremiumActivity">
+
+    <ImageView
+        android:id="@+id/ivPremium"
+        android:layout_width="300dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="96dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_premium_image" />
+
+
+    <TextView
+        android:id="@+id/premium_title"
+        style="@style/PremiumPageTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivPremium" />
+
+    <ImageView
+        android:id="@+id/premium_left_rectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/premium_title"
+        app:srcCompat="@drawable/ic_premium_rectangle" />
+
+    <TextView
+        android:id="@+id/premium_left_rectangle_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/premium_left_rectangle"
+        app:layout_constraintTop_toTopOf="@+id/premium_left_rectangle" />
+
+    <ImageView
+        android:id="@+id/premium_right_rectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/premium_title"
+        app:srcCompat="@drawable/ic_premium_rectangle" />
+
+    <TextView
+        android:id="@+id/premium_right_rectangle_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/premium_right_rectangle"
+        app:layout_constraintTop_toTopOf="@+id/premium_right_rectangle" />
+
+    <ImageView
+        android:id="@+id/premium_blue_rectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/premium_left_rectangle"
+        app:layout_constraintTop_toBottomOf="@+id/premium_title"
+        app:srcCompat="@drawable/ic_premium_blue_rectangle" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/PremiumLeftTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/premium_blue_rectangle"
+        app:layout_constraintStart_toStartOf="@+id/premium_blue_rectangle"
+        app:layout_constraintTop_toTopOf="@+id/premium_blue_rectangle" />
+
+    <ImageView
+        android:id="@+id/premium_pink_rectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/premium_right_rectangle"
+        app:layout_constraintTop_toBottomOf="@+id/premium_title"
+        app:srcCompat="@drawable/ic_premium_pink_rectangle" />
+
+    <TextView
+        style="@style/PremiumRightTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/premium_pink_rectangle"
+        app:layout_constraintStart_toStartOf="@+id/premium_pink_rectangle"
+        app:layout_constraintTop_toTopOf="@+id/premium_pink_rectangle" />
+
+
+    <Button
+        android:id="@+id/btnGoPremium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2C2B47"
+        android:fontFamily="@font/acme"
+        android:text="Go Premium"
+        android:textAllCaps="false"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="615dp" />
+
+    <TextView
+        android:id="@+id/tv_spannable_string"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2C2B47"
+        android:fontFamily="@font/acme"
+        android:text="$11.99"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="501dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
