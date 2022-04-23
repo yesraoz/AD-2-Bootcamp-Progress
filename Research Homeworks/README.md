@@ -42,3 +42,28 @@ böylece tasarımda görünürler ancak uygulama çalışırken görünmezler.
 tools:visibility="invisible" 
 tools:ignore="ContentDescription"
 tools:targetApi="lollipop"
+
+
+## <a name="3"></a> Araştırma Projesi 3
+
+- Font family dosyası nasıl oluşturulup kullanıyoruz?
+- Neden belirttiğiniz şekilde kullanımı tercih ediyoruz?
+
+
+
+# <a name="x"></a> Cevaplar:
+
+Android 8.0 (API düzeyi 26), yazı tiplerini kaynak olarak kullanmamıza olanak tanıyan XML'deki Yazı Tipleri adlı yeni bir özelliği bizlere sundu. Yazı tiplerini kaynak olarak paketlemek için resource altındaki font klasörüne ekleyebiliyoruz . Bu sayede Android Studio içinde bize sunulan fontlardan bir gün destek çekilirse ve bu fontlar kullanımdan kalkarsa, bizim programımızın sürdürülebilirdiğinin devam etmesi için hali hazırda bir font dosyamız oluyor ve bu sayede bir sorunla karşılaşmamış oluyoruz.
+Projemize font family dosyası eklemek için öncellikle proje dizininin altındaki “res” klasörüne sağ tıklıyoruz. Ardından açılan pencereden “New”i seçiyoruz. Daha sonra açılan pencerede “Android Resource File”ı seçiyoruz. File name bölümüne import edeceğimiz font ismini verdikten sonra “Resouce Type” olarak “Font”ı seçiyoruz ve “OK” buttonuna basıp font dosyamızı projemize eklemiş oluyoruz.
+
+![image](https://user-images.githubusercontent.com/39194998/164943224-e4152855-81df-4b03-bc89-b8decfd5f9dc.png)
+
+Daha sonra eklediğimiz font dosyasına çift tıklayarak, fontu daha kapsamlı görebiliyoruz. 
+
+![image](https://user-images.githubusercontent.com/39194998/164943233-ee0d9566-23d2-4f33-af26-4c086f60bc78.png)
+
+Projemize import ettiğimiz font’u nerelerde kullanacağımıza karar verdikten sonra ise style dosyamızın içinde “android:fontFamily” tag’ine “@font/fontname” olarak kullandığımız font’u belirtiyoruz.
+
+![image](https://user-images.githubusercontent.com/39194998/164943245-d1eec19a-2ca4-4d0b-a3cf-4ee5ae5cd5f1.png)
+
+
