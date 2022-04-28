@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">Layout Project</string>
-    <string name="start_now">Start Now</string>
-    <string name="premium_title">Get unlimited access!</string>
-    <string name="premium_button">Start Now</string>
-    <string name="premium_yearly">Yearly</string>
-    <string name="premium_monthly">Monthly</string>
-</resources>
